@@ -45,7 +45,7 @@ export default defineComponent({
              password:form.password
            };
             // localhost修改
-           request.post('http://192.168.43.51:9090/petshop/operator/login',data).then(function (response){
+           request.post('http://localhost:9090/petshop/operator/login',data).then(function (response){
              let res = response;
              // alert(JSON.stringify(res.status));
              if(res.status == 200){

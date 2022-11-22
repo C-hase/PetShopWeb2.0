@@ -52,7 +52,7 @@ export default {
           };
           if(parseInt(obj.isDelivery) === 0){
             // localhost修改
-            request.post('http://10.134.156.45:9090/petshop/operator/confirmOrder/pet',data).then(function (response){
+            request.post('http://localhost:9090/petshop/operator/confirmOrder/pet',data).then(function (response){
               let status = response.status;
               if(status == 200){
                 ElMessage('操作成功！');

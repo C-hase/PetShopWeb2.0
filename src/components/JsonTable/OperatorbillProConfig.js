@@ -177,7 +177,7 @@ export const localService = {
     }
     ;
         // localhost修改
-        request.post("http://10.134.156.45:9090/petshop/operator/getOrders/AllProducts"
+        request.post("http://localhost:9090/petshop/operator/getOrders/AllProducts"
           , {_page: data.page, _limit: data.psize}).then(function (response){
           proTable.data = response.宠物用品订单;
           // alert(JSON.stringify(response.宠物订单));

@@ -58,7 +58,7 @@ export default {
         orderId: 1
       };
       // localhost修改
-      request.post('http://10.134.156.45:9090/petshop/operator/confirmOrder/products',data).then(function (response) {
+      request.post('http://localhost:9090/petshop/operator/confirmOrder/products',data).then(function (response) {
         let status = response.status;
         if (status == 200) {
           // tabOptions.startUpdate = Date.now(); // 更新列表
